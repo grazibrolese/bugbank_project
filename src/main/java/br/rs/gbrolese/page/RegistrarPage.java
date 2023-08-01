@@ -2,6 +2,8 @@ package br.rs.gbrolese.page;
 
 import java.util.regex.Pattern;
 
+import org.openqa.selenium.By;
+
 import br.rs.gbrolese.core.BasePage;
 
 public class RegistrarPage extends BasePage {
@@ -23,10 +25,11 @@ public class RegistrarPage extends BasePage {
 			clicaBotaoByCSS(".card__register [id=toggleAddBalance]");
 			Thread.sleep(500);
 			clicarBotaoPorTexto("Cadastrar");
+			Thread.sleep(500);
 	    //	String mensagemSucesso = contaPage.obterMensagemSucesso();
 		//	String accountNumber = mensagemSucesso.trim().split(" ")[2];
 		//	System.out.println(mensagemSucesso);
-			clicarBotao("btnCloseModal");
+			clicarBotao(By.cssSelector("a#btnCloseModal"));;
 			login.logar(email, senha);
 			String accountNumber = basePage.obterTextoByXPath("//*[@id=\"textAccountNumber\"]/span");
 			

@@ -17,6 +17,9 @@ public class MenuPage extends BasePage {
 	public void acessarSaque() {
 		clicarBotao("btn-SAQUE");
 	}
+	public void voltarButton() {
+		clicarBotao("btnBack");
+	}
 	
 }
 

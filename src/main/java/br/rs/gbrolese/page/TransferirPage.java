@@ -1,6 +1,5 @@
 package br.rs.gbrolese.page;
 import org.junit.Assert;
-import org.junit.Test;
 import org.openqa.selenium.By;
 
 import br.rs.gbrolese.core.BasePage;
@@ -9,7 +8,7 @@ public class TransferirPage extends BasePage {
 	
 	
 	
-	@Test
+	
 	public void transferir(String account, String digit, String value, String description) {
 		escrever(By.cssSelector("input[name=\'accountNumber\']"), account);
 		escrever(By.cssSelector("input[name=\'digit\']"), digit);
