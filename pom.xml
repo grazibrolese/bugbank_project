@@ -20,11 +20,6 @@
 		  <artifactId>commons-io</artifactId>
 		  <version>2.6</version>
 	  </dependency>
-	  <dependency>
-	  	<groupId>br.ce.gbrolese</groupId>
-	  	<artifactId>ProjetoBasico</artifactId>
-	  	<version>0.0.1-SNAPSHOT</version>
-	  </dependency>
   </dependencies>
   
 </project>

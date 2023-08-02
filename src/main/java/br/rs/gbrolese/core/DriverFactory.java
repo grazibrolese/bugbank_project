@@ -1,9 +1,8 @@
 package br.rs.gbrolese.core;
+
 import org.openqa.selenium.Dimension;
-import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverFactory {
@@ -19,9 +18,7 @@ public class DriverFactory {
 				case CHROME: driver = new ChromeDriver(); break;
 			}
 			driver.manage().window().setSize(new Dimension(1200, 765));	
-			// Definir um tempo de espera implícito para aguardar elementos
-	        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	
+			
 		}
 		return driver;
 	}

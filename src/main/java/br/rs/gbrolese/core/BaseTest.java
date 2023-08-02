@@ -29,7 +29,6 @@ public class BaseTest {
 	@Before
 	public void inicializa() {
 		page.acessarTelaInicial();
-	//	page.logar("grazi.bro@gmail.com", "grazi123");
 	}
 	
 	@After

@@ -19,24 +19,14 @@ public class BasePage {
 		escrever(By.cssSelector(css_selector), texto);
 	}
 	
-	public String obterValorCampo(String id_campo) {
-		return getDriver().findElement(By.id(id_campo)).getAttribute("value");
-	}
-	
 	/********* Botoes ************/
 	
 
-	public void clicarCheck(String id) {
-		getDriver().findElement(By.id(id)).click();
-	}
-	public boolean isCheckMarcado(String id){
-		return getDriver().findElement(By.id(id)).isSelected();
+	public void clicarBotao(By by) {
+		getDriver().findElement((by)).click();
 	}
 	public void clicarBotao(String id) {
 		clicarBotao(By.id(id));
-	}
-	public void clicarBotao(By by) {
-		getDriver().findElement((by)).click();
 	}
 	public void clicaBotaoByCSS(String css) {
 		getDriver().findElement(By.cssSelector(css)).click();
@@ -44,16 +34,19 @@ public class BasePage {
 	public void clicarBotaoPorTexto(String texto){
 		clicarBotao(By.xpath("//button[.='"+texto+"']"));
 	}
-	public boolean isRadioMarcado(String id) {
-		return getDriver().findElement(By.id((id))).isSelected();
-		
-	}
-	/*********Links ************/
-	public void clicarLink(String id) {
-		getDriver().findElement(By.linkText(id)).click();
+	public boolean checarComSaldo() {
+		WebElement toggleElement = getDriver().findElement(By.xpath("//*[@id=\"toggleAddBalance\"]/parent::*"));
+		String resultado = toggleElement.getAttribute("class");
+		if (resultado.contains("hsmFIT")) {
+			return true;
+		}
+		else {
+			return false;
+		}
 	}
 	
 	/********* Obter texto  ************/
+	
 	public String obterTexto(By by) {
 		return getDriver().findElement((by)).getText();
 	}

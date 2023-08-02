@@ -8,8 +8,7 @@ public class LoginPage extends BasePage {
 	
 	public void acessarTelaInicial() {
 		DriverFactory.getDriver().get("https://bugbank.netlify.app//");
-	}
-	
+	}	
 	public void setEmail(String email) {
 		escrever("email", email);
 	}
@@ -18,8 +17,7 @@ public class LoginPage extends BasePage {
 	}
 	public void entrar(){
 		clicarBotaoPorTexto("Acessar");
-	}
-	
+	}	
 	public void logar(String email, String senha) {
 		setEmail(email);
 		setSenha(senha);

@@ -20,6 +20,9 @@ public class MenuPage extends BasePage {
 	public void voltarButton() {
 		clicarBotao("btnBack");
 	}
+	public void sairButton() {
+		clicarBotao("btnExit");
+	}
 	
 }
 
