@@ -19,9 +19,6 @@ public class TransferirPage extends BasePage {
 		escrever(By.cssSelector("input[name=\'description\']"), description);
 		clicarBotao(By.cssSelector("button[type=\'submit\']"));
 		Thread.sleep(1000);
-		
-		System.out.println(obterTexto(By.cssSelector("p#modalText")));
-		Thread.sleep(1000);
 		Assert.assertEquals("Transferencia realizada com sucesso", obterTexto(By.cssSelector("p#modalText")));
 		clicarBotao("btnCloseModal");
 		Thread.sleep(1000);
