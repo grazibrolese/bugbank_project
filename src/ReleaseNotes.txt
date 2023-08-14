@@ -1,0 +1,11 @@
+Na segunda versão do rojeto BugBank:
+
+Atualizada a versao do JUnit utilizada no projeto para versão 5.
+Atualizado o arquivo pom.xml
+Adicionado o arquivo .gitignore
+Adicionado o arquivo README
+Adicionado o arquivo ReleaseNotes
+Atualizados os drivers.
+Reorganização das pastas e arquivos: todas as classes 'page'  que eram de teste foram para a pasta src/test/page ,
+deixando na pasta 'Main' apenas as classes de setup do projeto (BaseDefinitions, DriverFactory, Propriedades),
+onde há definições dos browsers, screenshots e start dos testes.
