@@ -3,12 +3,12 @@ package br.rs.gbrolese.tests;
 import org.junit.Assert;
 import org.junit.Test;
 
-import br.rs.gbrolese.core.BaseDefinitions;
-import br.rs.gbrolese.page.LoginPage;
-import br.rs.gbrolese.page.MenuPage;
-import br.rs.gbrolese.page.RegistrarPage;
-import br.rs.gbrolese.page.ExtratoPage;
-import br.rs.gbrolese.page.TransferirPage;
+import Propriedades.BaseDefinitions;
+import br.rs.gbrolese.PageObjects.LoginPage;
+import br.rs.gbrolese.PageObjects.MenuPage;
+import br.rs.gbrolese.PageObjects.RegistrarPage;
+import br.rs.gbrolese.PageObjects.ExtratoPage;
+import br.rs.gbrolese.PageObjects.TransferirPage;
 
 public class CT01_TransferenciaEntreContas extends BaseDefinitions {
 

@@ -1,4 +1,4 @@
-package br.rs.gbrolese.core;
+package Propriedades;
 
 import org.apache.commons.io.FileUtils;
 import org.junit.After;
@@ -10,9 +10,6 @@ import org.openqa.selenium.TakesScreenshot;
 
 import java.io.File;
 import java.io.IOException;
-
-import static br.rs.gbrolese.core.DriverFactory.getDriver;
-import static br.rs.gbrolese.core.DriverFactory.killDriver;
 
 
 public class BaseDefinitions  {
@@ -28,13 +25,13 @@ public class BaseDefinitions  {
 
 	@After
 	public void finaliza() throws IOException{
-		TakesScreenshot ss = (TakesScreenshot) getDriver();
+		TakesScreenshot ss = (TakesScreenshot) DriverFactory.getDriver();
 		File arquivo = ss.getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(arquivo, new File("target" + File.separator + "screenshot" +
 				File.separator + testName.getMethodName() + ".jpg"));
 		
 		if(Propriedades.FECHAR_BROWSER) {
-			killDriver();
+			DriverFactory.killDriver();
 		}
 	}
 	

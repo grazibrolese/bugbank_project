@@ -1,4 +1,4 @@
-package br.rs.gbrolese.core;
+package Propriedades;
 
 public class Propriedades {
 	

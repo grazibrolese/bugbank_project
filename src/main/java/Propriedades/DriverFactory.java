@@ -1,4 +1,4 @@
-package br.rs.gbrolese.core;
+package Propriedades;
 
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;

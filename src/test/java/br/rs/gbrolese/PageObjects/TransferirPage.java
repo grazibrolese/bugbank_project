@@ -1,4 +1,4 @@
-package br.rs.gbrolese.page;
+package br.rs.gbrolese.PageObjects;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 

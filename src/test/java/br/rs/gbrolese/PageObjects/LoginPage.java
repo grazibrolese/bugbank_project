@@ -1,10 +1,14 @@
-package br.rs.gbrolese.page;
+package br.rs.gbrolese.PageObjects;
 
-import br.rs.gbrolese.core.DriverFactory;
+import Propriedades.Waits;
+import org.openqa.selenium.WebDriver;
 
 public class LoginPage extends BasePage {
 	
-	
+	private WebDriver driver;
+	private Waits waits;
+
+
 	public void setEmail(String email) {
 		escrever("email", email);
 	}

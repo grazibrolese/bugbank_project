@@ -1,4 +1,4 @@
-package br.rs.gbrolese.page;
+package br.rs.gbrolese.PageObjects;
 
 public class ExtratoPage extends BasePage {
 

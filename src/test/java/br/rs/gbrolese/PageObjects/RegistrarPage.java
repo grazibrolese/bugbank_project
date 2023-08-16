@@ -1,4 +1,4 @@
-package br.rs.gbrolese.page;
+package br.rs.gbrolese.PageObjects;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -22,7 +22,7 @@ public class RegistrarPage extends BasePage {
 			Thread.sleep(1000);
 			
 			if (!basePage.checarComSaldo()) {
-				clicaBotaoByCSS(".card__register [id=toggleAddBalance]");
+				clicarBotao("toggleAddBalance");
 			}
 			
 			Thread.sleep(1000);
