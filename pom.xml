@@ -33,7 +33,14 @@
 		  <version>2.6</version>
 	  </dependency>
 
-  </dependencies>
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.4.1</version>
+		</dependency>
+
+
+	</dependencies>
 
 
 

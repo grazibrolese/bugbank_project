@@ -1,6 +1,6 @@
 package br.rs.gbrolese.PageObjects;
 
-import Propriedades.Waits;
+import Framework.Waits;
 import org.openqa.selenium.WebDriver;
 
 public class LoginPage extends BasePage {

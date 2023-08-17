@@ -3,7 +3,7 @@ package br.rs.gbrolese.tests;
 import org.junit.Assert;
 import org.junit.Test;
 
-import Propriedades.BaseDefinitions;
+import Framework.BaseDefinitions;
 import br.rs.gbrolese.PageObjects.LoginPage;
 import br.rs.gbrolese.PageObjects.MenuPage;
 import br.rs.gbrolese.PageObjects.RegistrarPage;

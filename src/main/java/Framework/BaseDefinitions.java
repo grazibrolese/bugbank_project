@@ -1,4 +1,4 @@
-package Propriedades;
+package Framework;
 
 import org.apache.commons.io.FileUtils;
 import org.junit.After;

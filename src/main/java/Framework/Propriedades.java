@@ -1,4 +1,4 @@
-package Propriedades;
+package Framework;
 
 public class Propriedades {
 	

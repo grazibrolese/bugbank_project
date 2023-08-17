@@ -1,4 +1,4 @@
-package Propriedades;
+package Framework;
 
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
