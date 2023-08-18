@@ -1,4 +1,4 @@
-package Framework;
+package Framework.Browser;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.MutableCapabilities;
@@ -64,7 +64,14 @@ public class DriverManager {
 
     }
 
-    public static void killDriver() {
+    public static WebDriver getDriver(TypeBrowser type){
+        if(driver == null){
+            driver = getManagerDriver(type);
+        }
+        return driver;
+    }
+
+    public static void quitDriver() {
         if (driver != null) {
             driver.quit();
             driver = null;

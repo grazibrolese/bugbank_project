@@ -1,14 +1,14 @@
-package br.rs.gbrolese.tests;
+package tests;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import Framework.BaseDefinitions;
-import br.rs.gbrolese.PageObjects.LoginPage;
-import br.rs.gbrolese.PageObjects.MenuPage;
-import br.rs.gbrolese.PageObjects.RegistrarPage;
-import br.rs.gbrolese.PageObjects.ExtratoPage;
-import br.rs.gbrolese.PageObjects.TransferirPage;
+import Framework.Browser.BaseDefinitions;
+import PageObjects.LoginPage;
+import PageObjects.MenuPage;
+import PageObjects.RegistrarPage;
+import PageObjects.ExtratoPage;
+import PageObjects.TransferirPage;
 
 public class CT01_TransferenciaEntreContas extends BaseDefinitions {
 

@@ -1,4 +1,4 @@
-package Framework;
+package Framework.Browser;
 
 public class Propriedades {
 	

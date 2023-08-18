@@ -1,4 +1,4 @@
-package br.rs.gbrolese.PageObjects;
+package PageObjects;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -15,10 +15,11 @@ public class RegistrarPage extends BasePage {
 
 	public String registrarConta(String email, String name,String senha,String conf_senha) throws InterruptedException {
 	
-			escreverByCSS(".card__register [name=email]", email);
-			escreverByCSS(".card__register [name=name]", name);
-			escreverByCSS(".card__register [name=password]", senha);
-			escreverByCSS(".card__register [name=passwordConfirmation]", conf_senha);
+			escrever("email", email);
+		  //  escreverByCSS(".card__register [name=email]", email);
+			escrever("name", name);
+			escrever("password", senha);
+			escrever("passwordConfirmation", conf_senha);
 			Thread.sleep(1000);
 			
 			if (!basePage.checarComSaldo()) {

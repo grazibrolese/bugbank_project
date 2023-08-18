@@ -1,4 +1,4 @@
-package Framework;
+package Framework.Browser;
 
 import org.apache.commons.io.FileUtils;
 import org.junit.After;

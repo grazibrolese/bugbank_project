@@ -1,6 +1,6 @@
-package br.rs.gbrolese.PageObjects;
+package PageObjects;
 
-import static Framework.DriverFactory.getDriver;
+import static Framework.Browser.DriverFactory.getDriver;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

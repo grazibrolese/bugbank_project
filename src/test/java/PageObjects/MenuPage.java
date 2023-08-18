@@ -1,4 +1,4 @@
-package br.rs.gbrolese.PageObjects;
+package PageObjects;
 
 public class MenuPage extends BasePage {
 
