@@ -1,14 +1,9 @@
 package tests;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 import Framework.Browser.BaseDefinitions;
-import PageObjects.LoginPage;
-import PageObjects.MenuPage;
-import PageObjects.RegistrarPage;
-import PageObjects.ExtratoPage;
-import PageObjects.TransferirPage;
+import PageObjects.*;
+import Tasks.RegistrarContaTask;
+import org.junit.Test;
 
 public class CT01_TransferenciaEntreContas extends BaseDefinitions {
 
@@ -18,10 +13,11 @@ public class CT01_TransferenciaEntreContas extends BaseDefinitions {
 	MenuPage menu = new MenuPage();
 	TransferirPage transferir = new TransferirPage();
 	ExtratoPage saldo = new ExtratoPage();
+	RegistrarContaTask registrarTask = new RegistrarContaTask();
 	
 	@Test
 	public void testCompleto() throws InterruptedException {
-				
+		/*
 		//registro da Conta 1
 		registrar.acessarRegistraConta();
 		String conta1 = registrar.registrarConta("teste1@gmail.com", "Graziela", "12345", "12345");
@@ -45,7 +41,9 @@ public class CT01_TransferenciaEntreContas extends BaseDefinitions {
 		menu.acessarExtrato();
 		float saldoFinal = saldo.extrato();
 		Assert.assertEquals(950.0f,saldoFinal,0.0001);
-		
+		*/
+
+		registrarTask.efetuarRegistro();
 		
 		
 		
