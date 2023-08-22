@@ -3,10 +3,9 @@ package PageObjects;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 
-public class RegistrarPage extends BasePage {
+public class Registrar extends BasePage {
 	
 	BasePage basePage = new BasePage();
-	LoginPage login = new LoginPage();
 	MenuPage menu = new MenuPage();
 	
 	public void acessarRegistraConta() {
@@ -39,7 +38,7 @@ public class RegistrarPage extends BasePage {
 			Thread.sleep(1000);
 			
 			//logar para armazenar o número da conta. 
-			login.logar(email, senha);
+		//	login.logar(email, senha);
 			Thread.sleep(1000);
 			String accountNumber = basePage.obterTextoByXPath("//*[@id=\"textAccountNumber\"]/span");
 			Thread.sleep(1000);                               

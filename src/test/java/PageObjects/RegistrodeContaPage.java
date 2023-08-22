@@ -5,10 +5,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import static Framework.Browser.DriverFactory.getDriver;
+import static Framework.TestBase.getDriver;
 
 public class RegistrodeContaPage {
-
     private WebDriver driver;
     private Waits waits;
 

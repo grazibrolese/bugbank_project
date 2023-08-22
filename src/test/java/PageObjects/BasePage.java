@@ -1,11 +1,19 @@
 package PageObjects;
 
-import static Framework.Browser.DriverFactory.getDriver;
-
+import Framework.Browser.Waits;
+import Framework.TestBase;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class BasePage {
+public class BasePage extends TestBase {
+	private WebDriver driver;
+	private Waits waits;
+
+	public void basePage (WebDriver driver){
+		this.driver = driver;
+		waits = new Waits(this.driver);
+	}
 
 	public void escrever(By by, String texto){
 		getDriver().findElement(by).clear();

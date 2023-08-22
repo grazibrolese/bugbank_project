@@ -2,12 +2,17 @@ package Framework;
 
 import Framework.Browser.DriverManager;
 import Framework.Browser.TypeBrowser;
+import Framework.Reports.Report;
+import Framework.Utils.FilesOperation;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 
+import java.io.IOException;
+
 public class TestBase extends DriverManager {
     private static WebDriver driver;
-    private final String URL = "https://bugbank.netlify.app//";
+    private static FilesOperation filesOperation = new FilesOperation();
 
     public static WebDriver getDriver(){
         driver = getDriver(TypeBrowser.CHROME);
@@ -15,16 +20,17 @@ public class TestBase extends DriverManager {
     }
 
     @BeforeEach
-    public void setup(){
+    public void setup() throws IOException {
+        String URL = filesOperation.getProperties("url").getProperty("url.index");
         getDriver().get(URL);
     }
 
-/*    @AfterEach
+    @AfterEach
     public void finish(){
         Report.close();
         quitDriver();
     }
-*/
+
 
 
 }

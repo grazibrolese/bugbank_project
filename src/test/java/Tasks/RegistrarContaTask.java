@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class RegistrarContaTask {
 
-    private static WebDriver driver;
+    private WebDriver driver;
     private RegistrodeContaPage registrodeContaPage;
 
     public void efetuarRegistro(){

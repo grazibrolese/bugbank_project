@@ -1,20 +1,16 @@
 package tests;
 
-import Framework.Browser.BaseDefinitions;
+import Framework.TestBase;
 import PageObjects.*;
 import Tasks.RegistrarContaTask;
 import org.junit.Test;
 
-public class CT01_TransferenciaEntreContas extends BaseDefinitions {
-
-
-	RegistrarPage registrar = new RegistrarPage();
-	LoginPage login = new LoginPage();
+public class CT01_TransferenciaEntreContas extends TestBase {
+	Registrar registrar = new Registrar();
 	MenuPage menu = new MenuPage();
 	TransferirPage transferir = new TransferirPage();
 	ExtratoPage saldo = new ExtratoPage();
 	RegistrarContaTask registrarTask = new RegistrarContaTask();
-	
 	@Test
 	public void testCompleto() throws InterruptedException {
 		/*

@@ -1,8 +1,21 @@
 package PageObjects;
 
-public class ExtratoPage extends BasePage {
+import Framework.Browser.Waits;
+import org.openqa.selenium.WebDriver;
 
-	
+public class ExtratoPage extends BasePage {
+	private WebDriver driver;
+	private Waits waits;
+
+	public ExtratoPage (WebDriver driver){
+		this.driver = driver;
+		waits = new Waits(this.driver);
+	}
+
+	public ExtratoPage() {
+
+	}
+
 	public float extrato() throws InterruptedException {
 		
 		Thread.sleep(1000);

@@ -1,10 +1,18 @@
 package PageObjects;
+import Framework.Browser.Waits;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
 public class TransferirPage extends BasePage {
-	
-	
+
+	private WebDriver driver;
+	private Waits waits;
+
+	public void transferirPage (WebDriver driver){
+		this.driver = driver;
+		waits = new Waits(this.driver);
+	}
 	
 	
 	public void transferir(String account, String value, String description) throws InterruptedException {
